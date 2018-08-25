@@ -1,0 +1,283 @@
+
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  text-align: center;
+  margin: auto 0;
+  display: block;
+  background-color:#FAFAFA;
+  color: #7F7F7F;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+  padding-right: 20px;
+  text-align:center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  max-width: 100%;
+  color: #4A4A4A;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.banner p {
+  font-size: 20px;
+}
+
+.box p {
+ padding:20px;
+}
+
+.box img {
+ max-width: 95%;
+}
+
+.banner img{
+  overflow: hidden;
+  max-width: 80%;
+}
+
+.banner  {
+ margin:30px;
+}
+
+.banner p{
+ margin:10px;
+}
+
+.portfolio-title {
+ background-color: #fff;
+}
+
+.bottom {
+ padding:30px;
+ text-align: center;
+}
+
+.bottom{
+ border-bottom: 1px solid #7F7F7F;
+ margin: 30px 30px;
+}
+
+.bottom a{
+ color: #4A4A4A;
+ text-decoration: none;
+ padding-left: 20px;
+}
+
+.bottom-footer p a{
+  padding: 3px;
+  font-size:10px;
+  text-decoration: none;
+  padding-top: 30px;
+  color: #4A4A4A;
+  display: none;
+}
+
+.footermobile a h3{
+ display:inline-block;
+}
+
+.footermobile  p{
+  display: inline-block;
+}
+
+.portfolio-title,
+.box h3,
+.name,
+.left-footer,
+.bottom h3 {
+  color: #4A4A4A;
+}
+
+.backfooter a{
+ text-decoration: none;
+ color: #4A4A4A;
+ }
+
+main{
+  background-color: #fff;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+footer{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.namefooter{
+  padding-left: 20px
+  /*width: -moz-max-content;
+  width: max-content;
+  padding-left: 20px;*/
+ }
+
+
+.backfooter{
+  /*width: -moz-max-content;
+  width: max-content;
+  padding-right: 20px;*/
+}
+
+.bt1, .bt2, .bt3 {
+ display:none;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+.main-nav,
+.banner,
+.wrapper,
+.bottom-footer,
+footer  {
+  display: flex;
+}
+
+.wrapper{
+ flex-wrap: wrap;
+}
+
+.main-nav{
+ flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav a {
+  background-color:#FAFAFA
+}
+
+.banner {
+  flex-direction: row-reverse;
+}
+
+.banner {
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.banner-photo {
+ flex: 1 30%;
+}
+
+.tagline {
+  flex: 2 50%;
+  padding-right: 70px
+}
+
+.text {
+ flex:3;
+}
+
+.box{
+ flex:1 50%;
+}
+
+.backfooter {
+  display:none;
+}
+
+
+.bt1, .bt2, .bt3 {
+  display: unset;
+}
+
+
+.bt3 {
+ margin-right: 20px;
+}
+
+footer{
+  display:flex;
+  justify-content: flex-start;
+}
+
+.namefooter{
+  flex-grow: 1;
+  text-align: left;
+}
+
+footer a {
+ color: #4A4A4A;
+ text-decoration: none;
+}
+
+.bt1, .bt2, .bt3{
+  margin-left: 10px;
+}
+
+}
+
+@media (min-width: 1024px){
+
+.banner {
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.banner-photo {
+ flex: 1 30%;
+}
+
+.tagline {
+  flex: 2 50%;
+  padding-right: 70px
+}
+
+.top {
+  display:flex;
+}
+
+.name{
+ padding-left: 45px;
+
+}
+
+.top {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box{
+ flex:1 30%;
+}
+
+}
